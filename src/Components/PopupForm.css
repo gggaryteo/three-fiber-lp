@@ -1,0 +1,49 @@
+.policy-text {
+  margin-top: -15px;
+  color: black;
+}
+
+.popup-form {
+  margin-top: 3vh;
+}
+
+.popup-form h4 {
+  text-align: center;
+  margin: 30px 30px;
+}
+
+.popup-form .popup-button {
+  margin-top: 25px;
+  border-radius: 4px;
+  border: 0;
+  padding: 0.3rem 0.6rem;
+  box-shadow: var(--box-shadow);
+  letter-spacing: 0.2rem;
+  align-self: center;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #f2ac16;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.popup-form .information .email, .popup-form .information .firstname {
+  height: 30px;
+  text-indent: 6px;
+  margin-bottom: 2vh;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #676767;
+  width: 100%;
+}
+
+.popup-form .information .email::placeholder, .popup-form .information .firstname::placeholder {
+  color: #828282;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.popup-form .popup-button:active {
+  background-color: var(--hover-colour);
+}

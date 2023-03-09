@@ -1,12 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import logo from "./assets/logo.png";
+import { Canvas } from "@react-three/fiber";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <div style={{ height: "100%" }}>
+      <header>
+        <img className="logo" src={logo} alt="logo" />
+        <div className="alert">
+          <p className="alert-text">⚠️ Scroll down to get your gift...</p>
+        </div>
+      </header>
+
+      <Canvas>
+        <App />
+      </Canvas>
+      <footer>
+        
+      </footer>
+    </div>
   </React.StrictMode>
 );
 
